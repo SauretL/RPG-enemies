@@ -46,5 +46,69 @@
         "type": "Undead",
         "level": 1,
         "description": "They are cowardly alone, but brave in a pack. Their strategy is a simple, overwhelming numbers game directed by a smarter foe. They are more likely to bite your ankles than look you in the eye."
+    },
+    {
+        "id": 7,
+        "name": "Goblin Shaman",
+        "img": "./img/07goblinShaman.png",
+        "type": "Monster",
+        "level": 2,
+        "description": "A wizened goblin whose cunning has evolved into a knack for minor hexes and rituals. It commands respect from its tribe not with strength, but with unpredictable, sputtering magic. It prefers to lurk at the back, hurling curses and summoning feeble aids."
+    },
+    {
+        "id": 8,
+        "name": "Wyvern",
+        "img": "./img/08wyvern.png",
+        "type": "Dragon",
+        "level": 2,
+        "description": "A fierce, lesser descendant of true dragons, lacking their wisdom but not their menace. It augments its savage dives and venomous stinger with instinctual, basic spells. This wyvern is a clever predator, using magic to disorient and trap its prey."
+    },
+    {
+        "id": 9,
+        "name": "Big Blob",
+        "img": "./img/09bigBlob.png",
+        "type": "Elemental",
+        "level": 2,
+        "description": "A jovial, jiggling giant formed from the fusion of many happy slimes. It hasn't mastered a single element, but celebrates them all, playfully sputtering bursts of fire, frost, and spark. It views combat as a delightful game."
+    },
+    {
+        "id": 10,
+        "name": "Hornet",
+        "img": "./img/10hornet.png",
+        "type": "Insect",
+        "level": 2,
+        "description": "A larger, more aggressive evolution of the basic bug soldier. Its flight is a threatening drone, and it strikes with a powerful, piercing sting that delivers a debilitating venom. It fights with disciplined aggression, coordinating with its swarm to isolate and eliminate targets."
+    },
+    {
+        "id": 11,
+        "name": "Demon",
+        "img": "./img/11demon.png",
+        "type": "Fiend",
+        "level": 2,
+        "description": "A being of pure malice shaped by infernal power. It thrives on suffering, wielding cruel magic and brute force to corrupt and destroy. Its very presence chills the air and whispers promises of despair."
+    },
+    {
+        "id": 12,
+        "name": "Spectre",
+        "img": "./img/12spectre.png",
+        "type": "Undead",
+        "level": 2,
+        "description": "A chilling and malevolent ghost, far more powerful and defined than a common spirit. It haunts the living with purpose, its icy touch capable of freezing the very soul. Its mournful wail is a weapon that saps both warmth and courage from its victims."
+    },
+    {
+        "id": 13,
+        "name": "Hobgoblin",
+        "img": "./img/13hobgoblin.png",
+        "type": "Monster",
+        "level": 3,
+        "description": "A cunning goblin chieftain who has traded pure cowardice for calculated self-preservation. It commands its tribe with a blend of sharp tactics and minor battle magic, always letting its henchmen take the initial risk. Though capable in a fight, it would much rather win from the safety of the back ranks."
+    },
+    {
+        "id": 14,
+        "name": "Red Dragon",
+        "img": "./img/14redDragon.png",
+        "type": "Dragon",
+        "level": 3,
+        "description": "An ancient, avaricious wyrm of immense power and cunning. Its scales are like forged armor, its breath a river of fire, and its mind a repository of forgotten, devastating magic. It rules its volcanic lair and glittering hoard with tyrannical intelligence, incinerating any who dare trespass."
     }
 ]
