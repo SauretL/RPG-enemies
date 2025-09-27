@@ -1,9 +1,37 @@
 .monster-img {
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    border-style: solid;
+    border-color: green;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 10%;
+    border-style: dotted;
+    border-color: green;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.enemies-display {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+.enemy-item {
+    border-style: solid;
+    border-color: black;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin: 2%;
+    background-color: rgb(100, 100, 0, 0.3);
 }

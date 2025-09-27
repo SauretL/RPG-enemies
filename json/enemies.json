@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Goblin",
+        "img": "./img/01goblin.png",
+        "type": "Monster",
+        "level": 1,
+        "description": "They are cowardly alone, but brave in a pack. Their strategy is a simple, overwhelming numbers game directed by a smarter foe. They are more likely to bite your ankles than look you in the eye."
+    },
+    {
+        "id": 2,
+        "name": "Kobold",
+        "img": "./img/02kobold.png",
+        "type": "Dragon",
+        "level": 1,
+        "description": "A weak but cunning creature, loyal to a stronger master it ritualistically worships. They rarely fight directly, instead favoring organized packs and devious traps. Their cowardice vanishes when defending their lair or their deity."
+    },
+    {
+        "id": 3,
+        "name": "Slime",
+        "img": "./img/03slime.png",
+        "type": "Elemental",
+        "level": 1,
+        "description": "A happy, quivering blob of pure potential, the very weakest of elemental foes. Its element is still unformed, but it is eager to grow stronger through friendly fights. It bounces forward to greet adventurers with a cheerful, if harmless, lunge."
+    },
+    {
+        "id": 4,
+        "name": "Bug",
+        "img": "./img/04bug.png",
+        "type": "Insect",
+        "level": 1,
+        "description": "A disciplined, insectoid soldier armed with a sharpened spear. It fights in coordinated units, using its flight to harry foes from above. It acts without question, a single cog in a vast, hive-minded army."
+    },
+    {
+        "id": 5,
+        "name": "Imp",
+        "img": "./img/05imp.png",
+        "type": "Fiend",
+        "level": 1,
+        "description": "A simple spook who loves to startle travelers. Its one trick is a chilly touch from its pale blue hand, more unpleasant than dangerous. It fades away with a giggle if confronted boldly."
+    },
+    {
+        "id": 6,
+        "name": "Ghost",
+        "img": "./img/06ghost.png",
+        "type": "Undead",
+        "level": 1,
+        "description": "They are cowardly alone, but brave in a pack. Their strategy is a simple, overwhelming numbers game directed by a smarter foe. They are more likely to bite your ankles than look you in the eye."
+    }
+]
