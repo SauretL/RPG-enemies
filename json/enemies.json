@@ -110,5 +110,317 @@
         "type": "Dragon",
         "level": 3,
         "description": "An ancient, avaricious wyrm of immense power and cunning. Its scales are like forged armor, its breath a river of fire, and its mind a repository of forgotten, devastating magic. It rules its volcanic lair and glittering hoard with tyrannical intelligence, incinerating any who dare trespass."
+    },
+    {
+        "id": 15,
+        "name": "Goblin Knight",
+        "img": "./img/15goblinKnight.png",
+        "type": "Monster",
+        "level": 2,
+        "description": "A goblin with delusions of grandeur, clad in a suit of armor hammered together from scrap metal and tin cans. It proudly challenges foes with its rusted spear, though it's quick to flee if its makeshift plating is breached."
+    },
+    {
+        "id": 16,
+        "name": "Bugbear",
+        "img": "./img/16bugbear.png",
+        "type": "Monster",
+        "level": 2,
+        "description": "A hulking, hairy brute that serves as the hobgoblin's chief enforcer. It relies on overwhelming strength and a terrifying presence to crush any dissent within the tribe."
+    },
+    {
+        "id": 17,
+        "name": "Goblin Punk",
+        "img": "./img/17goblinPunk.png",
+        "type": "Monster",
+        "level": 2,
+        "description": "A rebellious goblin with a leather-clad attitude and a spiky mohawk. It rejects traditional goblin cowardice, preferring to charge in swinging its nail-studded baseball bat with reckless aggression."
+    },
+    {
+        "id": 18,
+        "name": "Albino Goblin",
+        "img": "./img/18albinoGoblin.png",
+        "type": "Monster",
+        "level": 2,
+        "description": "A pale, outcast goblin that has adapted to the shadows. Its keen night vision and stealth make it a perfect scout and ambusher for the tribe."
+    },
+    {
+        "id": 19,
+        "name": "Drake",
+        "img": "./img/19drake.png",
+        "type": "Dragon",
+        "level": 2,
+        "description": "A wingless, four-legged dragonkin that relies on brute strength and thick scales. While less intelligent than true dragons, it makes up for it with pure aggression and territorial instinct. Often found guarding treasure for more powerful masters."
+    },
+    {
+        "id": 20,
+        "name": "Kobold Engineer",
+        "img": "./img/20koboldEngineer.png",
+        "type": "Dragon",
+        "level": 2,
+        "description": "A clever kobold who has traded primitive worship for mechanical ingenuity. It sets elaborate traps, builds siege engines, and tinkers with volatile alchemical concoctions. Never fights fair, preferring to let its inventions do the work."
+    },
+    {
+        "id": 21,
+        "name": "Snowman",
+        "img": "./img/21snowman.png",
+        "type": "Elemental",
+        "level": 2,
+        "description": "A jovial but deadly construct of packed snow and ancient winter magic. It hurls piercing ice shards and exhales a freezing mist that slows its enemies. Its coal-black eyes seem to watch with playful malice."
+    },
+    {
+        "id": 22,
+        "name": "Inferno",
+        "img": "./img/22inferno.png",
+        "type": "Elemental",
+        "level": 2,
+        "description": "A raging figure of sentient flame, born from catastrophic fires. It consumes everything it touches, leaving only ash. Its intense heat warps the air around it, and lesser creatures burst into flame merely by approaching."
+    },
+    {
+        "id": 23,
+        "name": "Red Ant",
+        "img": "./img/23redAnt.png",
+        "type": "Insect",
+        "level": 2,
+        "description": "An aggressive and highly territorial ant species. Its powerful mandibles can shear through leather and bone with ease. It emits pheromones that send nearby insects into a berserk fury, making even small swarms dangerously coordinated."
+    },
+    {
+        "id": 24,
+        "name": "Soldier Ant",
+        "img": "./img/24soldierAnt.png",
+        "type": "Insect",
+        "level": 2,
+        "description": "The hive's dedicated warrior caste, with an enlarged head and crushing mandibles designed for defense. It acts as a living shield for its colony, fearlessly holding chokepoints against any threat. Its armor-like carapace can deflect sword blows."
+    },
+    {
+        "id": 25,
+        "name": "Butterfly",
+        "img": "./img/25butterfly.png",
+        "type": "Insect",
+        "level": 2,
+        "description": "A deceptively beautiful insect whose iridescent wings scatter a hypnotic, sleep-inducing dust. It flits unpredictably through battle, leaving foes dazed and vulnerable to its more aggressive swarm-mates. A pacifier that enables the hive's violence."
+    },
+    {
+        "id": 26,
+        "name": "Succubus",
+        "img": "./img/26succubus.png",
+        "type": "Fiend",
+        "level": 2,
+        "description": "A temptress who preys on emotion and desire. She wields charm magic that turns allies against each other and sows confusion. Her touch drains vitality, leaving victims as withered husks. She prefers manipulation to direct confrontation."
+    },
+    {
+        "id": 27,
+        "name": "Hellhound",
+        "img": "./img/27hellhound.png",
+        "type": "Fiend",
+        "level": 2,
+        "description": "A monstrous canine with smoldering fur and breath of sulfur and smoke. Bred to hunt souls, it tracks its prey with supernatural patience. Its bite ignites a fiendish fire that burns long after the initial wound."
+    },
+    {
+        "id": 28,
+        "name": "Pit Fiend",
+        "img": "./img/28pitFiend.png",
+        "type": "Fiend",
+        "level": 2,
+        "description": "A hulking, low-ranking officer of the infernal legions. It carries a barbed whip and a brutal cleaver, relishing the act of torment. Though not a master strategist, it is brutally effective at leading small squads of lesser fiends."
+    },
+    {
+        "id": 29,
+        "name": "Chain Devil",
+        "img": "./img/29chainDevil.png",
+        "type": "Fiend",
+        "level": 2,
+        "description": "A skeletal fiend wrapped in animated, razor-sharp chains. It can launch its chains to entangle and constrict victims from a distance. The sound of its dragging chains is a prelude to a bloody and restrained end."
+    },
+    {
+        "id": 30,
+        "name": "Mummy",
+        "img": "./img/30mummy.png",
+        "type": "Undead",
+        "level": 2,
+        "description": "An ancient corpse preserved by ritual and bound by cursed linens. Its slow, shambling gait belies a terrifying strength. Its touch carries a vile curse that rots flesh and weakens the spirit, and it is utterly relentless in its pursuit."
+    },
+    {
+        "id": 31,
+        "name": "Ghoul",
+        "img": "./img/31ghoul.png",
+        "type": "Undead",
+        "level": 2,
+        "description": "A corpse animated by a ravenous hunger. Its claws and teeth carry a paralytic venom, allowing it to feast on living victims while they are still conscious. They hunt in packs, cornering and overwhelming their prey."
+    },
+    {
+        "id": 32,
+        "name": "Wight",
+        "img": "./img/32wight.png",
+        "type": "Undead",
+        "level": 2,
+        "description": "A malevolent undead warrior risen from a burial mound. It possesses a grim intelligence and a hatred for the living. Its chill touch drains the life force from its victims, and it can command lesser skeletons and zombies."
+    },
+    {
+        "id": 33,
+        "name": "Banshee",
+        "img": "./img/33banshee.png",
+        "type": "Undead",
+        "level": 2,
+        "description": "The spectral remnant of a female elf who died of grief or betrayal. Her mournful wail can kill the living outright or shatter their courage. She is often bound to a specific location, which she haunts with eternal sorrow and rage."
+    },
+    {
+        "id": 34,
+        "name": "Gnoll",
+        "img": "./img/34gnoll.png",
+        "type": "Monster",
+        "level": 1,
+        "description": "A hyena-headed brute driven by base hunger and a love for destruction. They are disorganized but fierce, swarming over their prey with crude spears and relentless savagery. The scent of blood drives them into a frenzy."
+    },
+    {
+        "id": 35,
+        "name": "Koi",
+        "img": "./img/35koi.png",
+        "type": "Dragon",
+        "level": 1,
+        "description": "A serene, brightly colored fish that has begun its long journey to dragonhood. It possesses a latent magical energy, seen as a gentle glow, and can manipulate small amounts of water. It is a symbol of potential, not yet a true threat."
+    },
+    {
+        "id": 36,
+        "name": "Flame Slime",
+        "img": "./img/36flameSlime.png",
+        "type": "Elemental",
+        "level": 1,
+        "description": "A slime that has embraced the element of fire. It radiates a pleasant warmth and leaves a trail of embers. It attacks with a harmless but startling 'puff' of hot air, still learning to control its newfound heat."
+    },
+    {
+        "id": 37,
+        "name": "Frost Slime",
+        "img": "./img/37frostSlime.png",
+        "type": "Elemental",
+        "level": 1,
+        "description": "A slime that has bonded with the essence of ice. It chills the air around it and can create a thin layer of frost on surfaces. Its primary attack is a mildly chilly bounce that might make an adventurer shiver."
+    },
+    {
+        "id": 38,
+        "name": "Worker Ant",
+        "img": "./img/38workerAnt.png",
+        "type": "Insect",
+        "level": 1,
+        "description": "The tireless backbone of the colony. While not a dedicated fighter, it will fiercely defend the hive with its sharp mandibles. It is stronger than it looks and can carry many times its own weight, making its grip surprisingly tenacious."
+    },
+    {
+        "id": 39,
+        "name": "Slug",
+        "img": "./img/39slug.png",
+        "type": "Insect",
+        "level": 1,
+        "description": "A slow, simple-minded gastropod that leaves a trail of sticky, acidic slime. The slime is unpleasant and can dull weapons, but is not truly dangerous. It is often ignored unless it's consuming a precious mushroom farm."
+    },
+    {
+        "id": 40,
+        "name": "Quasit",
+        "img": "./img/40quasit.png",
+        "type": "Fiend",
+        "level": 1,
+        "description": "A tiny, mischievous demon that serves as a familiar to more powerful fiends. It can turn invisible or shapeshift into a simple beast to spy and cause minor annoyances. Its claws carry a weak poison that causes irritation and itching."
+    },
+    {
+        "id": 41,
+        "name": "Zombie",
+        "img": "./img/41zombie.png",
+        "type": "Undead",
+        "level": 1,
+        "description": "A shambling corpse animated by dark magic. It is slow, stupid, and relentless. Its strength lies in its numbers and durability; it requires a decisive blow to be put down for good. It spreads its curse through a filthy bite."
+    },
+    {
+        "id": 42,
+        "name": "Skeleton",
+        "img": "./img/42skeleton.png",
+        "type": "Undead",
+        "level": 1,
+        "description": "Bones reanimated by necromantic energy. It fights with a rusted weapon, its movements jerky but precise. More fragile than a zombie, but faster and able to follow simple tactical commands from a master."
+    },
+    {
+        "id": 43,
+        "name": "Ogre",
+        "img": "./img/43ogre.png",
+        "type": "Monster",
+        "level": 3,
+        "description": "A monstrous giant of sheer brute force and staggering stupidity. It wields a giant club or tree trunk, capable of smashing through fortress walls. Its thick hide turns aside arrows, and its rage is a force of nature."
+    },
+    {
+        "id": 44,
+        "name": "Tianlong",
+        "img": "./img/44tianlong.png",
+        "type": "Dragon",
+        "level": 3,
+        "description": "A celestial dragon from the heavens, a being of immense power and wisdom. It commands the storms and winds, and its presence brings blessings or calamity. It does not hoard gold, but rather guards cosmic balance. Crossing it is a fate worse than death."
+    },
+    {
+        "id": 45,
+        "name": "Genie",
+        "img": "./img/45genie.png",
+        "type": "Elemental",
+        "level": 3,
+        "description": "A powerful noble of the elemental planes, bound to a lamp or vessel. It wields reality-altering magic, capable of granting wishes with cruel, literal twists. It is a master of its chosen element, summoning storms of fire, sand, or water at a whim."
+    },
+    {
+        "id": 46,
+        "name": "Elemental Storm",
+        "img": "./img/46elementalStorm.png",
+        "type": "Elemental",
+        "level": 3,
+        "description": "A cataclysmic confluence of raw elemental power—fire, wind, water, and earth raging simultaneously. It is not a creature but a localized natural disaster given sentience and malice. It seeks only to consume and destroy everything in its path."
+    },
+    {
+        "id": 47,
+        "name": "King Slime",
+        "img": "./img/47kingSlime.png",
+        "type": "Elemental",
+        "level": 3,
+        "description": "The ultimate evolution of the neutral slime lineage, a colossal, benevolent ruler of all oozes. It has mastered all elements, not in conflict, but in perfect harmony. It can split into smaller slimes or absorb them to grow, and views the world with ancient, playful wisdom."
+    },
+    {
+        "id": 48,
+        "name": "Queen Bee",
+        "img": "./img/48queenBee.png",
+        "type": "Insect",
+        "level": 3,
+        "description": "The heart and mind of a vast insectoid empire. She rarely moves, protected by her loyal royal guard. Instead, she directs the entire swarm with a psychic hive-mind and continuously births new soldiers to overwhelm any threat. Defeating her is the only way to stop the swarm."
+    },
+    {
+        "id": 49,
+        "name": "Kuwagataoni",
+        "img": "./img/49kuwagataoni.png",
+        "type": "Insect",
+        "level": 3,
+        "description": "A mighty stag-beetle samurai, a master of the blade. Its exoskeleton is harder than steel, and its gigantic mandibles can cut a horse in two. It fights with honor and terrifying precision, a solitary warrior whose skill is unmatched in the insect world."
+    },
+    {
+        "id": 50,
+        "name": "Kabutoni",
+        "img": "./img/50kabutoni.png",
+        "type": "Insect",
+        "level": 3,
+        "description": "An ancient rhinoceros beetle warrior, a living fortress. It is slower than its stag-beetle rival but possesses unmatched defensive power. It can charge through formations with unstoppable force, its horn capable of piercing castle gates."
+    },
+    {
+        "id": 51,
+        "name": "Archfiend",
+        "img": "./img/51archfiend.png",
+        "type": "Fiend",
+        "level": 3,
+        "description": "A high-ranking commander of the infernal armies, a master of strategy and cruel magic. It can summon legions of lesser fiends, corrupt the land around it, and break the will of heroes with whispers of despair. A single one of these beings can orchestrate the fall of kingdoms."
+    },
+    {
+        "id": 52,
+        "name": "Lich",
+        "img": "./img/52lich.png",
+        "type": "Undead",
+        "level": 3,
+        "description": "A wizard who has cheated death by binding its soul to a phylactery. It commands vast necromantic powers, raising armies of the dead and hurling spells that can slay dozens in an instant. It is an immortal, patient, and utterly evil intelligence."
+    },
+    {
+        "id": 53,
+        "name": "Pharaoh",
+        "img": "./img/53pharaoh.png",
+        "type": "Undead",
+        "level": 3,
+        "description": "An ancient ruler awakened from a millennial slumber within a pyramid tomb. It is surrounded by an aura of divine authority, empowering its undead minions and cursing those who defy it. It wields the lost magic of a dead civilization, making it a sorcerous and martial threat."
     }
 ]

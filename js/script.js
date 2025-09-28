@@ -1,11 +1,14 @@
 //variables
 
-const enemiesContainer = document.getElementById('enemies-container')
+let enemiesContainer = document.getElementById('enemies-container')
 const enemyItem = document.getElementsByClassName(`enemy-item`)
+const page = document.getElementById(`page`)
+const pageButton = document.getElementById(`pageButton`)
 
 const enemiesURL = "./json/enemies.json"
 let arrayEnemies = []
 let enemyFilter
+let currentPage = "Bestiary"
 
 
 //async function to fetch arrayEnemies
@@ -158,6 +161,39 @@ async function init() {
     createEnemyCards(enemyFilter)
 
 }
+
+// function to change DOM for gacha or bestiary
+
+function changePage(dom) {
+    if (dom == "gacha") {
+        page.innerHTML = `
+        <h1>Enemies</h1>
+        <h2>Gacha!</h2>
+        <p>Click the "Roll!" button to roll for three enemies: Level 1 enemies have a 70% chance of appearing. Level 2 enemies have a 28% chance of appearing. Level 3 enemies have a 2% chance of appearing. Test your luck!</p>
+            <button>Roll!</button>
+            `
+    }
+
+    else {
+        page.innerHTML = `<div id="enemies-container"></div>`
+        enemiesContainer = document.getElementById('enemies-container')
+        init()
+    }
+
+
+}
+
+// button that toogles between pages
+
+pageButton.addEventListener(`click`, function () {
+    if (currentPage == "Bestiary") {
+        changePage("gacha")
+        currentPage = "Gacha"
+    } else {
+        changePage()
+        currentPage = "Bestiary"
+    }
+})
 
 // start program
 init()
