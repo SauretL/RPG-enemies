@@ -4,6 +4,7 @@ let enemiesContainer = document.getElementById('enemies-container')
 const enemyItem = document.getElementsByClassName(`enemy-item`)
 const page = document.getElementById(`page`)
 const pageButton = document.getElementById(`pageButton`)
+let gachaContainer = document.getElementsByClassName(`gachaContainer`)
 
 const enemiesURL = "./json/enemies.json"
 let arrayEnemies = []
@@ -170,8 +171,11 @@ function changePage(dom) {
         <h1>Enemies</h1>
         <h2>Gacha!</h2>
         <p>Click the "Roll!" button to roll for three enemies: Level 1 enemies have a 70% chance of appearing. Level 2 enemies have a 28% chance of appearing. Level 3 enemies have a 2% chance of appearing. Test your luck!</p>
-            <button>Roll!</button>
+            <button id="rollButton">Roll!</button>
+            <div class="gachaContainer"></<div>
             `
+        const rollButton = document.getElementById(`rollButton`)
+        rollButton.addEventListener(`click`, function () { gachaCards(enemyFilter) })
     }
 
     else {
@@ -181,6 +185,33 @@ function changePage(dom) {
     }
 
 
+}
+
+// function to make the gacha cards
+
+function gachaCards(enemies) {
+    const gachaContainer = document.querySelector('.gachaContainer')
+    if (!enemies || enemies.length == 0) {
+        gachaContainer.innerHTML = `<h3>Error</h3>
+          <p>No enemies found in the bestiary</p>`
+
+    } else {
+        let htmlGacha = `<h3>Your cards!</h3>
+    <ul>`
+        enemies.forEach(enemy => {
+            htmlGacha += `<li class="enemy-item"> <img src="${enemy.img}" alt="${enemy.name} img" class="monster-img">
+                    <ul>
+                    <li>Name: ${enemy.name}</li>
+                    <li>Type: ${enemy.type}</li>
+                    <li>Level: ${enemy.level}</li>
+                    <li>Description: ${enemy.description}</li>
+                    </ul>
+                    </li>`
+
+        })
+        htmlGacha += `</ul>`
+        gachaContainer.innerHTML = htmlGacha
+    }
 }
 
 // button that toogles between pages
