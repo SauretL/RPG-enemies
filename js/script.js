@@ -175,7 +175,7 @@ function changePage(dom) {
             <div class="gachaContainer"></<div>
             `
         const rollButton = document.getElementById(`rollButton`)
-        rollButton.addEventListener(`click`, function () { gachaCards(enemyFilter) })
+        rollButton.addEventListener(`click`, function () { gachaCards(arrayEnemies) })
     }
 
     else {
@@ -187,6 +187,50 @@ function changePage(dom) {
 
 }
 
+// function to make a new array with 3 random enemies
+
+function getRandomEnemiesWithProbability(enemies) {
+    if (!enemies || enemies.length === 0) return []
+
+    const randomEnemies = []
+    const availableEnemies = enemies.slice()
+
+
+    for (let i = 0; i < 3 && availableEnemies.length > 0; i++) {
+        const selectedEnemy = selectEnemyByProbability(availableEnemies)
+        randomEnemies.push(selectedEnemy)
+
+        const index = availableEnemies.findIndex(e => e === selectedEnemy)
+        availableEnemies.splice(index, 1)
+    }
+
+    return randomEnemies
+}
+
+// function to add weight to each level (probability)
+
+function selectEnemyByProbability(enemies) {
+    const weights = enemies.map(enemy => {
+        if (enemy.level === 1) return 70
+        if (enemy.level === 2) return 28
+        if (enemy.level === 3) return 2
+        return 70
+    })
+
+    const totalWeight = weights.reduce((a, b) => a + b, 0)
+    let random = Math.random() * totalWeight
+
+    for (let i = 0; i < enemies.length; i++) {
+        random -= weights[i]
+        if (random <= 0) {
+            return enemies[i]
+        }
+    }
+
+    return enemies[enemies.length - 1]
+}
+
+
 // function to make the gacha cards
 
 function gachaCards(enemies) {
@@ -196,10 +240,27 @@ function gachaCards(enemies) {
           <p>No enemies found in the bestiary</p>`
 
     } else {
+        enemies = getRandomEnemiesWithProbability(enemies)
         let htmlGacha = `<h3>Your cards!</h3>
-    <ul>`
+    <ul class="enemies-display">`
         enemies.forEach(enemy => {
-            htmlGacha += `<li class="enemy-item"> <img src="${enemy.img}" alt="${enemy.name} img" class="monster-img">
+            htmlGacha += `<li class="gacha-item `
+            if (enemy.level == 1) {
+                htmlGacha += `lvl-one-item"`
+            } else if (enemy.level == 2) {
+                htmlGacha += `lvl-two-item"`
+            } else {
+                htmlGacha += `lvl-three-item"`
+            }
+            htmlGacha += `> <img src="${enemy.img}" alt="${enemy.name} img" class="gacha-img `
+            if (enemy.level == 1) {
+                htmlGacha += `lvl-one-img`
+            } else if (enemy.level == 2) {
+                htmlGacha += `lvl-two-img`
+            } else {
+                htmlGacha += `lvl-three-img`
+            }
+            htmlGacha += `">
                     <ul>
                     <li>Name: ${enemy.name}</li>
                     <li>Type: ${enemy.type}</li>
@@ -213,6 +274,7 @@ function gachaCards(enemies) {
         gachaContainer.innerHTML = htmlGacha
     }
 }
+
 
 // button that toogles between pages
 

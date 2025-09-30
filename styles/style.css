@@ -1,41 +1,419 @@
-.monster-img {
-    width: 50%;
-    border-style: solid;
-    border-color: green;
+/* ===== RESET & GENERAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-    width: 10%;
-    border-style: dotted;
-    border-color: green;
+body {
+    background-color: yellowgreen;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+header {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 100, 0, 0.3));
+    border-bottom: 3px solid darkgreen;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0 20px;
+}
 
+.logo {
+    width: 80px;
+    height: 80px;
+    border: 3px dotted green;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: rotate(10deg);
+}
+
+.header-nav h2 {
+    color: darkgreen;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== MAIN CONTENT AREA ===== */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: darkgreen;
+    font-size: 3rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: darkgreen;
+    text-align: center;
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+/* ===== BESTIARY SECTION ===== */
+/* Brown theme for bestiary */
+#enemies-container {
+    background: linear-gradient(135deg, #8B4513, #A0522D, #D2691E);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.4);
 }
 
 .enemies-display {
     list-style: none;
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-}
-
-body {
-    background-color: yellowgreen;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 0;
+    margin-top: 20px;
 }
 
 .enemy-item {
-    border-style: solid;
-    border-color: black;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    margin: 2%;
-    background-color: rgb(100, 100, 0, 0.3);
+    border: 3px solid #5D4037;
+    padding: 20px;
+    background: linear-gradient(135deg, #A1887F, #BCAAA4);
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.enemy-item:hover {
+    background: linear-gradient(135deg, #8D6E63, #A1887F);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.enemy-item ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.enemy-item li {
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    border-left: 4px solid #5D4037;
+}
+
+/* ===== GACHA SECTION ===== */
+.gachaContainer {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #4A148C, #7B1FA2);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(74, 20, 140, 0.4);
+}
+
+.gacha-item {
+    border-style: solid;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    color: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gacha-item:hover {
+    transform: translateY(-5px);
+}
+
+.gacha-item ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.gacha-item li {
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+/* ===== IMAGE STYLES ===== */
+.monster-img {
+    width: 100%;
+    max-width: 200px;
+    border-style: solid;
+    border-color: green;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.monster-img:hover {
+    transform: scale(1.05);
+}
+
+.gacha-img {
+    width: 100%;
+    max-width: 200px;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Level-based image borders for Gacha */
+.lvl-one-img {
+    border-color: blueviolet;
+    border-width: 3px;
+}
+
+.lvl-two-img {
+    border-color: #2196F3;
+    border-width: 4px;
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.6);
+}
+
+.lvl-three-img {
+    border-color: gold;
+    border-width: 5px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    animation: legendary-glow 2s infinite alternate;
+}
+
+@keyframes legendary-glow {
+    from {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        transform: scale(1);
+    }
+
+    to {
+        box-shadow: 0 0 30px rgba(255, 215, 0, 1), 0 0 40px rgba(255, 215, 0, 0.6);
+        transform: scale(1.02);
+    }
+}
+
+/* ===== GACHA LEVEL STYLES ===== */
+/* Progressive enhancement for gacha cards by level */
+.lvl-one-item {
+    background: linear-gradient(135deg, #7B1FA2, #9C27B0);
+    border-color: #E1BEE7;
+    border-width: 2px;
+}
+
+.lvl-two-item {
+    background: linear-gradient(135deg, #1976D2, #2196F3);
+    border-color: #BBDEFB;
+    border-width: 3px;
+    box-shadow: 0 8px 25px rgba(33, 150, 243, 0.4);
+    transform: scale(1.02);
+}
+
+.lvl-three-item {
+    background: linear-gradient(135deg, #FF9800, #FF5722, #F44336);
+    border-color: gold;
+    border-width: 4px;
+    box-shadow: 0 12px 30px rgba(255, 87, 34, 0.5);
+    transform: scale(1.05);
+    animation: legendary-card 3s infinite alternate;
+}
+
+@keyframes legendary-card {
+    from {
+        transform: scale(1.05) rotate(-1deg);
+        box-shadow: 0 12px 30px rgba(255, 87, 34, 0.5);
+    }
+
+    to {
+        transform: scale(1.08) rotate(1deg);
+        box-shadow: 0 15px 35px rgba(255, 87, 34, 0.7), 0 0 40px rgba(255, 215, 0, 0.4);
+    }
+}
+
+/* ===== BUTTON STYLES ===== */
+/* Filter buttons for bestiary */
 .enemy-button {
-    background-color: green
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    min-width: 120px;
+}
+
+.enemy-button:hover {
+    background: linear-gradient(135deg, #45a049, #2E7D32);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.enemy-button:active {
+    transform: translateY(-1px);
+}
+
+/* Page toggle button */
+#pageButton {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+}
+
+#pageButton:hover {
+    background: linear-gradient(135deg, #45a049, #1B5E20);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Gacha roll button - extra special! */
+#rollButton {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24, #ff4757);
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 25px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(238, 90, 36, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rollButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(238, 90, 36, 0.6);
+    background: linear-gradient(135deg, #ff7979, #ff6348, #ff3838);
+}
+
+#rollButton:active {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(238, 90, 36, 0.4);
+}
+
+/* Shine effect on roll button */
+#rollButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
+    transition: left 0.5s;
+}
+
+#rollButton:hover::before {
+    left: 100%;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 100, 0, 0.3));
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 3px solid darkgreen;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .enemies-display {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .enemy-button {
+        padding: 10px 15px;
+        font-size: 12px;
+        min-width: 100px;
+    }
+
+    #pageButton,
+    #rollButton {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    #rollButton {
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    .enemy-item,
+    .gacha-item {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .monster-img,
+    .gacha-img {
+        max-width: 150px;
+    }
 }
